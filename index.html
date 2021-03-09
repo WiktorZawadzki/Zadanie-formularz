@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <form method="POST" enctype="text/plain" action="index.php">
+        <fieldset style="width: 320px;"><legend align="left">Dane osobowe</legend>
+    <table>
+        <tr><td>Imię:</td><td><input type="text" name="imie" required></td></tr>
+        <tr><td>Nazwisko:</td><td><input type="text" name="nazwisko" required></td></tr>
+        <tr><td>Data urodzenia:</td><td><input type="date" name="data_urodzenia" required></td></tr>
+        <tr><td>Miejsce urodzenia:</td><td><input type="text" name="miejsce_urodzenia" required></td></tr>
+    </table>
+    </fieldset>
+        <fieldset style="width: 410px;"><legend align="left">Pozostałe informacje</legend>
+        <table>
+        <tr><td>Wykształcenie:</td><td><input type="radio" id="podstawowe" name="wyksztalcenie" required>podstawowe
+        <input type="radio" id="średnie" name="wyksztalcenie" required>średnie
+        <input type="radio" id="wyższe" name="wyksztalcenie" required>wyższe</td></tr>
+        <tr><td>Zawód wykonywany:</td><td><input type="text" name="nazwisko" required></td></tr>
+        <tr><td>Dodatkowe umiejętności:</td><td><textarea rows="13" cols="35" name="dodatkowe_umiejetnosci"></textarea></td></tr>
+        </table>
+    </fieldset>
+        <input type="submit" value="Wyślij">
+    </form>     
+</body>
+
+</html>
